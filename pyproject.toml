@@ -1,0 +1,17 @@
+[project]
+name = "deepfake-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "facenet-pytorch>=2.5.3",
+    "grad-cam>=1.5.5",
+    "gradio>=5.29.0",
+    "matplotlib>=3.10.1",
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.2.1",
+    "torch>=2.7.0",
+    "tqdm>=4.67.1",
+    "wandb>=0.19.10",
+]
