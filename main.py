@@ -14,7 +14,7 @@ mtcnn = MTCNN(select_largest=False, post_process=False, device=DEVICE ).to(DEVIC
 
 model = InceptionResnetV1(pretrained="vggface2", classify=True, num_classes=1, device=DEVICE)
 
-checkpoint = torch.load("inceptionresnetv1.pth", map_location=torch.device('mps'))
+checkpoint = torch.load("models/inceptionresnetv1.pth", map_location=torch.device('mps'))
 model.load_state_dict(checkpoint['model_state_dict'])
 model.to(DEVICE)
 model.eval()
